@@ -7,7 +7,7 @@
     <div class="stat-percentage" [class.positive]="isPositive === 'true'">
       <span>{{ percentage }}%</span>
       <img
-        [src]="isPositive === 'true' ? 'https://cdn.builder.io/api/v1/image/assets/4ed16216b751438587fef52dd74da871/8cac86d4fd4df0652df1836e546dda0da88b9085c4e984fe20d447db6c1c0cf1?apiKey=4ed16216b751438587fef52dd74da871&' : 'https://cdn.builder.io/api/v1/image/assets/4ed16216b751438587fef52dd74da871/22c7da6d7c1bfa0b57122e859c4d17eaf04d96ca2031c4e97091f58901df724e?apiKey=4ed16216b751438587fef52dd74da871&'"
+        [src]="isPositive === 'true' ? 'positiveArrow.svg'"
         [alt]="isPositive === 'true' ? 'Increase' : 'Decrease'"
         class="trend-icon"
       />
