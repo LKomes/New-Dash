@@ -1,0 +1,43 @@
+.sidebar {
+  background: var(--black-white-white, #fff);
+  width: 16%;
+  color: var(--Neutral-600, #4b4b4b);
+  font: 400 16px PingFang SC, sans-serif;
+}
+.menu-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+.menu-item {
+  padding: 14px 20px;
+}
+.menu-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
+}
+.menu-icon {
+  width: 18px;
+  height: 18px;
+}
+.active {
+  background: var(--Primary-100, #eefcfc);
+  border-radius: 4px;
+  color: var(--Primary-600, #15c5ce);
+}
+.expand-icon {
+  width: 12px;
+  height: 12px;
+  margin-left: auto;
+}
+.menu-header {
+  font-weight: 500;
+}
+@media (max-width: 991px) {
+  .sidebar {
+    width: 100%;
+  }
+}

@@ -1,0 +1,33 @@
+<div class="stat-card">
+  <div class="stat-header">
+    <div class="stat-main">
+      <div class="stat-title">{{ title }}</div>
+      <div class="stat-value">{{ value }}</div>
+    </div>
+    <div class="stat-percentage" [class.positive]="isPositive === 'true'">
+      <span>{{ percentage }}%</span>
+      <img
+        [src]="isPositive === 'true' ? 'https://cdn.builder.io/api/v1/image/assets/4ed16216b751438587fef52dd74da871/8cac86d4fd4df0652df1836e546dda0da88b9085c4e984fe20d447db6c1c0cf1?apiKey=4ed16216b751438587fef52dd74da871&' : 'https://cdn.builder.io/api/v1/image/assets/4ed16216b751438587fef52dd74da871/22c7da6d7c1bfa0b57122e859c4d17eaf04d96ca2031c4e97091f58901df724e?apiKey=4ed16216b751438587fef52dd74da871&'"
+        [alt]="isPositive === 'true' ? 'Increase' : 'Decrease'"
+        class="trend-icon"
+      />
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="stat-details">
+    <div class="detail-labels">
+      <div class="detail-label">Yesterday</div>
+      <div class="detail-label">Last Week</div>
+    </div>
+    <div class="detail-values">
+      <div class="detail-value">
+        <div>{{ yesterdayValue }}</div>
+        <div class="detail-percentage">({{ yesterdayPercentage }}%)</div>
+      </div>
+      <div class="detail-value">
+        <div>{{ lastWeekValue }}</div>
+        <div class="detail-percentage">({{ lastWeekPercentage }}%)</div>
+      </div>
+    </div>
+  </div>
+</div>

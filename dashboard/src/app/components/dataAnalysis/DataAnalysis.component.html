@@ -1,0 +1,51 @@
+<div class="data-analysis">
+  <app-header></app-header>
+  <div class="main-content">
+    <app-sidebar></app-sidebar>
+    <div class="dashboard">
+      <div class="stat-cards">
+        <app-stat-card
+          title="Total Cost"
+          value="2,999"
+          percentage="99.29"
+          isPositive="true"
+          yesterdayValue="1,011"
+          lastWeekValue="8,289"
+          yesterdayPercentage="9.99"
+          lastWeekPercentage="12.65"
+        ></app-stat-card>
+        <app-stat-card
+          title="Activity"
+          value="8,399"
+          percentage="16.29"
+          isPositive="true"
+          yesterdayValue="2,011"
+          lastWeekValue="18,289"
+          yesterdayPercentage="12.99"
+          lastWeekPercentage="32.65"
+        ></app-stat-card>
+        <app-stat-card
+          title="Total hours"
+          value="267"
+          percentage="20.29"
+          isPositive="false"
+          yesterdayValue="11"
+          lastWeekValue="65"
+          yesterdayPercentage="9.99"
+          lastWeekPercentage="15.65"
+        ></app-stat-card>
+        <app-stat-card
+          title="Rate"
+          value="89%"
+          percentage="19.29"
+          isPositive="true"
+          yesterdayValue="1,011"
+          lastWeekValue="8,289"
+          yesterdayPercentage="9.99"
+          lastWeekPercentage="12.65"
+        ></app-stat-card>
+      </div>
+      <app-chart></app-chart>
+    </div>
+  </div>
+</div>
