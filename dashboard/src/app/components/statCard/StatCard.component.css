@@ -3,7 +3,7 @@
   border-radius: 4px;
   padding: 18px 24px;
   font-family: PingFang SC, sans-serif;
-  width: calc(25% - 15px);
+  width: calc(100% - 25px);
 }
 .stat-header {
   display: flex;
@@ -47,7 +47,7 @@
 .detail-labels {
   color: var(--Neutral-500, #8e8e8e);
 }
-.detail-label:last-child {
+.detail-label:not(:first-child) {
   margin-top: 4px;
 }
 .detail-values {
