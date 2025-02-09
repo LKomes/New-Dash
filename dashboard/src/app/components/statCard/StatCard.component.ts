@@ -1,5 +1,8 @@
-import { Component, Input } from "@angular/core";
+import { Component, Input, OnInit } from "@angular/core";
 import { CommonModule } from "@angular/common";
+import { DataAnalysisService } from "../../services/data-analysis.service";
+import { Observable, of } from "rxjs";
+import { StatCard } from "../../interfaces/StatCard.interface";
 
 @Component({
   selector: "app-stat-card",
@@ -8,7 +11,8 @@ import { CommonModule } from "@angular/common";
   templateUrl: "./StatCard.component.html",
   styleUrls: ["./StatCard.component.css"],
 })
-export class StatCardComponent {
+export class StatCardComponent  {
+  public statCard$: Observable<StatCard> = of();
   @Input() title: string = "";
   @Input() value: string = "";
   @Input() percentage: string = "";
@@ -17,4 +21,8 @@ export class StatCardComponent {
   @Input() lastWeekValue: string = "";
   @Input() yesterdayPercentage: string = "";
   @Input() lastWeekPercentage: string = "";
+
+
 }
+
+

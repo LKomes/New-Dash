@@ -16,6 +16,7 @@ export class DataAnalysisService {
     return this.http.get<StatCard>(`${this.apiUrl}/stat-cards.json`);
   }
 
+  /**
   getChartData(): Observable<any> {
     return this.http.get(`${this.apiUrl}/chart-data.json`);
   }
@@ -30,4 +31,5 @@ export class DataAnalysisService {
       endDate,
     });
   }
+    **/
 }
